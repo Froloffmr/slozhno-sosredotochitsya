@@ -14,13 +14,15 @@
   background-image: var(--header-image);
   background-size: cover;
   background-position: bottom;
+  height: 100vh;
   width: 100vw;
   padding: 10px;
 }
+
 .decorated-zone {
   position: relative;
- 
 }
+
 .decorated-zone::after {
   content: "";
   width: 25px;
@@ -59,7 +61,7 @@
 
 .header__theme-menu-button:hover {
   box-sizing: border-box;
-outline:1px solid var(--header-decals-color);
+  outline:1px solid var(--header-decals-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -140,21 +142,22 @@ outline:1px solid var(--header-decals-color);
   text-decoration: none;
   text-shadow:1px 1px var(--logo-text-shadow) ;
 }
+
 .text-decor:hover {
   text-decoration-line: underline;
 }
+
 .text-decor:focus {
   outline: 1px solid #F1B2CE ;
 }
 
 .main__heading {
-color: var(--main__heading__text);
-font-family: IBM Plex Mono;
-
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 23.4px;
+  color: var(--main__heading__text);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .main__subtitle {
@@ -165,16 +168,16 @@ line-height: 23.4px;
   font-weight: 700;
   line-height: 23.4px;
   background-color:var(--text-background-color);
-
 }
+
 .main__subtitle__under {
   color:var(--header__text-color);
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 23.4px;
-background-color: var(--text-background-color);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  background-color: var(--text-background-color);
 }
 
 .section__why {
@@ -189,17 +192,16 @@ background-color: var(--text-background-color);
 .about__text {
   margin-block: 10px 20px;
   color:var(--about--text--color);
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 23.4px;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
 }
 
 .pictures__box {
   width: 99%;
-  object-fit: cover;
-        
+  object-fit: cover;    
 }
 
 .footer {
@@ -207,8 +209,9 @@ line-height: 23.4px;
   max-width: 1024px;;
   min-height: 668px;
   padding: 10px;
-  
+  height: 100vh;
 }
+
 .footer__text {
   display: flex;
   align-items: center;
@@ -220,6 +223,7 @@ line-height: 23.4px;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem); 
   min-height: 667px;
 }
+
 .sunset {
   grid-area: sunset;
 }
@@ -227,12 +231,15 @@ line-height: 23.4px;
 .ice-cream {
   grid-area: ice-cream;
 }
+
 .tape {
   grid-area: tape;
 }
+
 .books{
   grid-area: books;
 }
+
 .street{
   grid-area: street;
 }
