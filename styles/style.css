@@ -16,7 +16,6 @@
   background-position: bottom;
   height: 100vh;
   width: 100vw;
-  padding: 10px;
 }
 
 .decorated-zone {
@@ -77,7 +76,11 @@
 }
 
 .header__theme-menu-item {
-  margin: 6px;
+  display: inline-flex;
+height: 26px;
+padding: 0px 13px;
+justify-content: center;
+align-items: center;
 }
 
 .rec__text {
@@ -117,6 +120,8 @@
   font-weight: 700;
   line-height: 82.5%; 
   place-self: start;
+  margin-top: 12.5px;
+  margin-left: 7px;
 }
 
 .header__text {
@@ -130,12 +135,23 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
 }
 
 .content {
+  display: grid;
+  gap: 50px;
   min-width: 375px;
   max-width: 1024px;;
-  padding: 0px 10px;
+  padding: 40px 10px;
 }
 
 .text-decor {
@@ -182,15 +198,38 @@
 
 .section__why {
   display: grid;
+  gap:20px;
 }
 
-.about {
+.section__how {
   display: grid;
   gap: 20px;
 }
 
+.section__what {
+  display: grid;
+  gap: 20px;
+}
+
+.section__pictures {
+  display: grid;
+  gap: 10px;
+}
+
+.picture__conteiner {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  gap: 10px;
+}
+
+.about {
+  display: grid;
+  gap:20px;
+  
+}
+
 .about__text {
-  margin-block: 10px 20px;
   color:var(--about--text--color);
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -199,6 +238,20 @@
   line-height: 23.4px;
 }
 
+.wrapper__gap {
+  display: grid;
+  gap: 10px;
+}
+
+.wrapper__gapp {
+  display: grid;
+  gap: 20px;
+}
+
+.what__wrapper2 {
+  display: grid;
+  gap: 10px;
+}
 .pictures__box {
   width: 99%;
   object-fit: cover;    
@@ -291,5 +344,6 @@
     .header__theme-menu-list {
       display: flex;
       justify-content: center;
+      flex-direction: row;
     }
   }
