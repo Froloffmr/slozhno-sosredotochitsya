@@ -9,4 +9,13 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --logo-color:#DB00FF;
+  --logo-text-shadow:#FF0070;
+  --header__text-color:#000028;
+  --background-color: #000028;
+  --main__heading__text: #FF0070;
+  --text-background-color:#FF0070;
+  --about--text--color:#F1B2CE;
+  --rec__text:flex;
+  --header-decals-color:#FF0070;
 }

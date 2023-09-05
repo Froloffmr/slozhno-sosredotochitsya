@@ -2,3 +2,15 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --logo-color:#DB00FF;
+  --logo-text-shadow:#FF0070;
+  --header__text-color:#000028;
+  --header-decals-color:#FF0070;
+  --background-color: #000028;
+  --main__heading__text: #FF0070;
+  --text-background-color:#FF0070;
+  --about--text--color:#F1B2CE;
+  --header-image: url(/images/cover-image-dark.png);
+  --rec__text:flex;
+}
