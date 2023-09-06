@@ -22,9 +22,8 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-        /* Дублируем переменные светлой темы */    
-        --logo-color:#FFC2E6;
+  :root {   
+  --logo-color:#FFC2E6;
   --logo-text-shadow:#FF8DCB;
   --header__text-color:#353430;
   --background-color:#FFF1F7;

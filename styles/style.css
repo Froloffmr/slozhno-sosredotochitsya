@@ -13,7 +13,8 @@
   min-height: 668px;
   background-image: var(--header-image);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
 }
@@ -45,17 +46,17 @@
 }
 
 .header__theme-menu-button {
-    box-sizing: border-box;
-    color:var(--header-decals-color);
-    width: 70px;
-    text-align: center;
-    font-family: ' IBM Plex Mono', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    border:none;
-    background-color: inherit;
+  box-sizing: border-box;
+  color:var(--header-decals-color);
+  width: 70px;
+  text-align: center;
+  font-family: ' IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  border:none;
+  background-color: inherit;
 }
 
 .header__theme-menu-button:hover {
@@ -77,10 +78,10 @@
 
 .header__theme-menu-item {
   display: inline-flex;
-height: 26px;
-padding: 0px 13px;
-justify-content: center;
-align-items: center;
+  height: 26px;
+  padding: 0px 13px;
+  justify-content: center;
+  align-items: center;
 }
 
 .rec__text {
@@ -219,14 +220,13 @@ align-items: center;
 .picture__conteiner {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
   gap: 10px;
 }
 
 .about {
   display: grid;
   gap:20px;
-  
 }
 
 .about__text {
@@ -252,12 +252,16 @@ align-items: center;
   display: grid;
   gap: 10px;
 }
+
 .pictures__box {
   width: 99%;
   object-fit: cover;    
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 375px;
   max-width: 1024px;;
   min-height: 668px;
@@ -298,6 +302,15 @@ align-items: center;
 }
 
 @media (min-width: 767px) {
+  .header {
+    padding: 10px;
+  }
+
+  .content {
+    gap: 80px;
+    padding: 40px 20px;
+  }
+
   .section__why {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -313,6 +326,7 @@ align-items: center;
   .main__heading {
     width: 30vw;
   }
+
   .picture__conteiner {
     display: grid;
     gap:10px;
@@ -321,10 +335,12 @@ align-items: center;
     "tape books ice-cream"
     "tape street street"
   }
+
   .pictures__box{
     object-fit: cover;
     height: 100%;
   }
+
   }
   
   @media (min-width: 1023px){
@@ -337,13 +353,16 @@ align-items: center;
       display: flex;
       flex-direction: column;
     }
+
     .header__theme-menu {
       width: 100%;
       position: absolute;
     }
+
     .header__theme-menu-list {
       display: flex;
       justify-content: center;
       flex-direction: row;
     }
+
   }
