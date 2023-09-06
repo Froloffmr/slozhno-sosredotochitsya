@@ -338,6 +338,25 @@
     height: 100%;
   }
 
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .rec__text {
+    padding-inline-end: 50px;
+    padding-block-start: 21px;
+  }
+
+  .rec__text::after {
+    right: 29px;
+  }
+
   }
   
   @media (min-width: 1023px) {
@@ -345,13 +364,14 @@
       align-content: space-between;
     }
     .logo {
-      margin-top: 100px;
+      margin-top: 160px;
+      margin-left: -20px;
     }
 
     .header__text {
       width: 491px;
       height: 70px;
-      margin-bottom: 100px;
+      margin-bottom: 115px;
     }
 
     .what__wrapper1 {
