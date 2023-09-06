@@ -308,16 +308,16 @@
 
   .section__why {
     display: grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 1fr 3fr;
     gap:20px;
   }
   
   .section__how {
     display: grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 1fr 3fr;
     gap:20px;
   }
-  
+
   .section__pictures {
     gap: 20px;
   }
@@ -362,6 +362,14 @@
       display: flex;
       justify-content: center;
       flex-direction: row;
+    }
+
+    .section__why {
+      grid-template-columns: 3fr 7fr;
+    }
+
+    .section__how {
+      grid-template-columns: 3fr 7fr;
     }
 
   }
