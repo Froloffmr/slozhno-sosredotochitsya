@@ -19,7 +19,7 @@
   --header-image: url(../images/cover-image-light.png);
   --rec__text: none;
   --header-decals-color: #353430;
-  --hover-opacity-color:rgba(50, 49, 45, 0.40);
+  --hover-opacity-color: #32312d66;
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,7 +34,7 @@
     --about--text--color: #353430;
     --rec__text: none;
     --header-decals-color: #353430;
-    --hover-opacity-color:rgba(50, 49, 45, 0.40);
+    --hover-opacity-color: #32312d66;
     --header-image: url(../images/cover-image-light.png);
   }
 }

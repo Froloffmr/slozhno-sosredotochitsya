@@ -18,4 +18,6 @@
   --about--text--color: #f1b2ce;
   --rec__text: flex;
   --header-decals-color: #ff0070;
+  --hover-opacity-color: #ff007066;
+  --header-image: url(../images/cover-image-dark.png);
 }
