@@ -247,7 +247,7 @@
   gap: 20px;
 }
 
-.what__wrapper2 {
+.what__wrapper-flex {
   display: grid;
   gap: 10px;
 }
@@ -281,7 +281,7 @@
   line-height: 82.5%;
 }
 
-.pictures__box:nth-child(1){
+.pictures__box:nth-child(1) {
   grid-area: sunset;
 }
 
