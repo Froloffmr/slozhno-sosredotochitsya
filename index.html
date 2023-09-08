@@ -7,6 +7,7 @@
     <meta name="color-scheme" content="dark light" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png"/>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -18,7 +19,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span class="rec__text">REC</span>
+      <span class="rec__text" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -66,7 +67,7 @@
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
               <a
-                class="text-decor"
+                class="link"
                 href="https://www.dana.org/article/multicosts-of-multitasking/"
                 >выяснили</a
               >, что мозгу тяжело концентрироваться даже на двух делах
@@ -93,8 +94,8 @@
       </section>
       <section class="section__what">
         <h2 class="main__heading">Что снижает концентрацию внимания?</h2>
-        <div class="about what__wrapper1">
-          <article class="what__wrapper2">
+        <div class="about what__wrapper-grid">
+          <article class="what__wrapper-flex">
             <h3 class="main__subtitle">Многозадачность</h3>
             <p class="about__text">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -105,7 +106,7 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </article>
-          <article class="what__wrapper2">
+          <article class="what__wrapper-flex">
             <h3 class="main__subtitle">Еда</h3>
             <p class="about__text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -116,7 +117,7 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </article>
-          <article class="what__wrapper2">
+          <article class="what__wrapper-flex">
             <h3 class="main__subtitle">Гаджеты</h3>
             <p class="about__text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -167,7 +168,7 @@
               <p class="about__text">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                 <a
-                  class="text-decor"
+                  class="link"
                   href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                   >показал</a
                 >, что созерцание природы повышает концентрацию, в то время как
@@ -204,31 +205,31 @@
         <h2 class="main__subtitle">А можно в картинках?</h2>
         <article class="picture__conteiner">
           <img
-            class="pictures__box sunset"
+            class="pictures__box"
             src="./images/sunset.png"
             loading="lazy"
             alt="закат"
           />
           <img
-            class="pictures__box ice-cream"
+            class="pictures__box"
             src="./images/ice-cream.png"
             loading="lazy"
             alt="мороженое"
           />
           <img
-            class="pictures__box tape"
+            class="pictures__box"
             src="./images/tape.png"
             loading="lazy"
             alt="кассета"
           />
           <img
-            class="pictures__box books"
+            class="pictures__box"
             src="./images/books.png"
             loading="lazy"
             alt="книга"
           />
           <img
-            class="pictures__box street"
+            class="pictures__box"
             src="./images/street.png"
             loading="lazy"
             alt="улица"
@@ -237,7 +238,7 @@
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <div class="footer__text">focus</div>
+      <h5 class="footer__text">focus</h5>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

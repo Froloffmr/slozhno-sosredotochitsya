@@ -2,19 +2,21 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: var(--header-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-content: space-evenly;
   min-width: 375px;
   max-width: 1024px;
   min-height: 668px;
   background-image: var(--header-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   height: 100vh;
   padding: 10px;
 }
@@ -50,18 +52,19 @@
   color: var(--header-decals-color);
   width: 70px;
   text-align: center;
-  font-family: ' IBM Plex Mono', sans-serif;
+  font-family: ' IBM Plex Mono', monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
   box-sizing: border-box;
-  outline: 1px solid var(--header-decals-color);
+  outline: 1px solid var(--hover-opacity-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -78,20 +81,24 @@
 
 .header__theme-menu-item {
   display: inline-flex;
-  height: 26px;
   justify-content: center;
   align-items: center;
+}
+
+.header__theme-menu {
+      align-self: center;
 }
 
 .rec__text {
   display: var(--rec__text);
   align-items: center;
-  color: #ff0070;
+  color: var(--header-decals-color);
   text-align: center;
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  text-transform: uppercase;
   padding-inline-end: 40px;
   padding-block-start: 10px;
   position: absolute;
@@ -102,18 +109,19 @@
   display: block;
   width: 9px;
   height: 9px;
-  border: 1px solid #ff0070;
-  filter: drop-shadow(0 0 4px #ff0070);
+  border: 1px solid var(--header-decals-color);
+  box-shadow: 0 0 4px 2px var(--header-decals-color);
   border-radius: 50%;
-  background-color: red;
+  background-color: var(--header-decals-color);
   position: absolute;
   right: 20px;
+  top: 18px;
 }
 
 .logo {
   color: var(--logo-color);
   text-shadow: 4px 4px 0 var(--logo-text-shadow);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
@@ -122,16 +130,14 @@
 }
 
 .header__text {
-  max-height: 117px;
-  display: inline-block;
   background-color: var(--text-background-color);
   color: var(--header__text-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  margin-bottom: 10px;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -148,22 +154,22 @@
   padding: 40px 10px;
 }
 
-.text-decor {
+.link {
   text-decoration: none;
   text-shadow: 1px 1px var(--logo-text-shadow);
 }
 
-.text-decor:hover {
-  text-decoration-line: underline;
+.link:hover {
+  border-bottom:1px solid var(--about--text--color);
 }
 
-.text-decor:focus {
-  outline: 1px solid #f1b2ce;
+.link:focus {
+  outline: 1px solid var(--about--text--color);
 }
 
 .main__heading {
   color: var(--main__heading__text);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -172,7 +178,7 @@
 
 .main__subtitle {
   color: var(--header__text-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -182,7 +188,7 @@
 
 .main__subtitle__under {
   color: var(--header__text-color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -224,7 +230,7 @@
 
 .about__text {
   color: var(--about--text--color);
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -248,6 +254,7 @@
 
 .pictures__box {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -266,7 +273,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "IBM Plex Mono";
+  font-family: "IBM Plex Mono",monospace;
   color: var(--logo-color);
   font-weight: 700;
   text-shadow: 2px 2px 0 var(--logo-text-shadow);
@@ -274,23 +281,23 @@
   line-height: 82.5%;
 }
 
-.sunset {
+.pictures__box:nth-child(1){
   grid-area: sunset;
 }
 
-.ice-cream {
+.pictures__box:nth-child(2) {
   grid-area: ice-cream;
 }
 
-.tape {
+.pictures__box:nth-child(3) {
   grid-area: tape;
 }
 
-.books {
+.pictures__box:nth-child(4) {
   grid-area: books;
 }
 
-.street {
+.pictures__box:nth-child(5) {
   grid-area: street;
 }
 
@@ -306,7 +313,7 @@
   }
 
   .header__text {
-    width: 364px;
+    max-width: 364px;
   }
 
   .logo {
@@ -343,11 +350,6 @@
       'tape street street';
   }
 
-  .pictures__box {
-    object-fit: cover;
-    height: 100%;
-  }
-
   .decorated-zone::before {
     top: 20px;
     right: 20px;
@@ -365,6 +367,7 @@
 
   .rec__text::after {
     right: 29px;
+    top: 28px;
   }
 }
 
@@ -376,28 +379,26 @@
   }
 
   .logo {
-    margin-top: 160px;
     margin-left: -20px;
   }
 
   .header__text {
-    width: 491px;
-    height: 70px;
-    margin-bottom: 115px;
+    max-width: 491px;
   }
 
-  .what__wrapper1 {
+  .what__wrapper-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .what__wrapper2 {
+  .what__wrapper-flex {
     display: flex;
     flex-direction: column;
   }
 
   .header__theme-menu {
     width: 100%;
+    align-self: start;
   }
 
   .header__theme-menu-list {
@@ -405,8 +406,6 @@
     justify-content: center;
     flex-direction: row;
   }
-
-  /* test */
 
   .content {
     gap: 80px;
@@ -443,27 +442,8 @@
       'tape street street';
   }
 
-  .pictures__box {
-    object-fit: cover;
-    height: 100%;
-  }
-
-  .decorated-zone::before {
-    top: 20px;
-    right: 20px;
-  }
-
-  .decorated-zone::after {
-    left: 20px;
-    bottom: 20px;
-  }
-
   .rec__text {
     padding-inline-end: 50px;
     padding-block-start: 21px;
-  }
-
-  .rec__text::after {
-    right: 29px;
   }
 }
