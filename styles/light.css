@@ -10,7 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --logo-color: #ffc2e6;
-  --logo-text-shadow: #ff8dcb;
+  --logo-text-shadow: #FF0070;
+  --link-text-shadow: #ff8dcb;
   --header__text-color: #353430;
   --background-color: #fff1f7;
   --main__heading__text: #353430;
@@ -26,7 +27,8 @@
 
   :root {
     --logo-color: #ffc2e6;
-    --logo-text-shadow: #ff8dcb;
+    --logo-text-shadow: #FF0070;
+    --link-text-shadow:#ff8dcb;
     --header__text-color: #353430;
     --background-color: #fff1f7;
     --main__heading__text: #353430;

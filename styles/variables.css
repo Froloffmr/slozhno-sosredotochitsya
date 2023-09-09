@@ -6,6 +6,7 @@
 :root {
   --logo-color: #db00ff;
   --logo-text-shadow: #ff0070;
+  --link-text-shadow:#ff0070;
   --header__text-color: #000028;
   --header-decals-color: #ff0070;
   --hover-opacity-color: #ff007066;
